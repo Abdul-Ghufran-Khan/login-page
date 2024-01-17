@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+    <style>
+     #a{
+       background-color: rgb(58, 57, 57);  
+     }
+     #same{
+        text-align: center;
+        margin-top: 100px;
+     }
+     .b{
+        background-color: rgb(59, 57, 57);
+        width: 25%;
+        color: white;
+        padding: 10px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+     }
+     .b:focus{ 
+          border-color: blue;
+          outline: none;
+          padding: 20px;
+        }
+      #c{
+        text-align: center;
+        color: #ffffff;
+        background-color: rgba(54, 102, 190, 0.842);
+        width: 100px;
+        height: 32px;
+        padding: 6px;
+        margin: -8px;
+        border: none; 
+        border-radius: 4px; 
+      }
+      #c:hover{
+        cursor: pointer;
+        background-color: rgba(16, 80, 199, 0.842);
+        color: #ffffff;
+      }
+      #d{
+        text-align: center;
+        color: rgb(70, 69, 69);
+        background-color: rgba(255, 255, 255, 0.603);
+        width: 100px;
+        height: 32px;
+        padding: 6px;
+        margin: 16px;
+        border: none;
+        border-radius: 4px; 
+      }
+      #d:hover{
+        cursor: pointer;
+        background-color: rgba(36, 35, 36, 0.288);
+        color: white;
+      }
+      .label { 
+        position: absolute;
+        color: white;
+        font-size: 15px;
+      }
+      #mess{
+        height:75px;
+      }
+      .label:hover { 
+        position: absolute;
+        color: blue;
+      }
+    </style>
+</head>
+<body id="a">
+    <form id="same">
+    <label class="label">Name</label><input class="b" type="text" name="Name" required><br/><br/>
+    <label class="label">Email</label><input class="b" type="email" name="" required><br/><br/>
+    <label class="label">Password</label><input class="b" type="password" name="" required><br/><br/>
+    <label class="label">Number</label><input class="b" type="number" name="" required><br/><br/>
+    <label class="label">Message</label><input class="b" id="mess" type="text" name="" required><br/><br/>
+    <button id="c">Submit</button>
+    <button id="d">Cancel</button>
+    </form>
+</body>
+</html>
